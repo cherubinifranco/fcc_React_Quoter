@@ -1,11 +1,23 @@
+import NotFoundPage  from './components/NotFoundPage'
 import { QuoteWrapper } from "./components/QuoteWrapper";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { BrowserRouter, Route } from "react-router-dom";
+import { BrowserRouter, Route, Routes} from "react-router-dom";
 
 function App() {
   return (
-  <QuoteWrapper />
+    <BrowserRouter>
+      <Routes>
+
+
+        <Route path='/' element= {<QuoteWrapper />} />
+        
+
+        <Route path='*' element= {<NotFoundPage />} />
+      </Routes> 
+    
+    
+    </BrowserRouter>
   )
 }
 
