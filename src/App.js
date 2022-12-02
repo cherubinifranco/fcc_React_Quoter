@@ -1,5 +1,6 @@
 import NotFoundPage  from './components/NotFoundPage'
-import { QuoteWrapper } from "./components/QuoteWrapper";
+import { NewQuote } from "./components/NewQuote";
+import { QuoteSorter } from "./components/QuoteSorter"
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { BrowserRouter, Route, Routes} from "react-router-dom";
@@ -10,7 +11,8 @@ function App() {
       <Routes>
 
 
-        <Route path='/' element= {<QuoteWrapper />} />
+        <Route path='/' element= {<QuoteSorter />} />
+        <Route path='/new' element= {<NewQuote />} />
         
 
         <Route path='*' element= {<NotFoundPage />} />
