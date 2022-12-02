@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+.App {
+    background-color: #1B1B1B;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+}
+.wrapper{
+    border-radius: 11px;
+    border: 1px solid #70706C;
+    background-color: #323232;
+    width: 650px;
+    height: auto;
+}
+
+
+
+.red{
+    background-color: red;
+}
+.blue{
+    background-color: blue;
+}
+.yellow{
+    background-color: yellow;
+}
+
+i img{
+    width: 22px;
+    height: 22px;
+}
+.none{
+    color: #FFF;
+    text-decoration: none;
+}
+
+.none:hover{
+    color: rgb(201, 201, 201);
+}
