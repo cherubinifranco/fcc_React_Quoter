@@ -1,7 +1,8 @@
 const mongoose = require('mongoose')
+import { URI } from './config'
 
 mongoose
-  .connect(process.env.URI, { useNewUrlParser: true })
+  .connect(URI, { useNewUrlParser: true })
   .then(() => {
     console.log("Database conected");
   })

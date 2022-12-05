@@ -20,7 +20,7 @@ export class NewQuote extends React.Component {
     });
   }
   handleSubmit() {
-    fetch("http://localhost:5000/quotes/new", {
+    fetch("http://192.168.100.147:5000/quotes/new", {
       method: "POST",
       body: JSON.stringify({
         quote: this.state.quote,

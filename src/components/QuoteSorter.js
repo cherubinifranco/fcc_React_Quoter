@@ -18,7 +18,7 @@ export class QuoteSorter extends React.Component {
   }
 
   nextQuote() {
-    fetch("http://localhost:5000/quotes/sorter", {
+    fetch("http://192.168.100.147:5000/quotes/sorter", {
       method: "get",
       headers: {
         "Content-Type": "aplication/json",
@@ -53,7 +53,7 @@ export class QuoteSorter extends React.Component {
               href={"https://twitter.com/" + this.state.author}
               target="_blank"
             >
-              <span class="none p-2">@ {this.state.author}</span>
+              <span className="none p-2">@ {this.state.author}</span>
             </a>
           </div>
           <div className="d-flex justify-content-around pb-3">
