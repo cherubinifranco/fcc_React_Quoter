@@ -47,14 +47,9 @@ export class QuoteSorter extends React.Component {
           </h1>
 
           <div className="m-4">
-            <a
-              id="author"
-              className="none"
-              href={"https://twitter.com/" + this.state.author}
-              target="_blank"
-            >
-              <span className="none p-2">@ {this.state.author}</span>
-            </a>
+            
+              <span className="none p-2">{this.state.author}</span>
+            
           </div>
           <div className="d-flex justify-content-around pb-3">
             <>
@@ -63,9 +58,7 @@ export class QuoteSorter extends React.Component {
                 target="_blank"
                 href={
                   "https://twitter.com/intent/tweet?url=" +
-                  this.state.quote +
-                  "%0a-@" +
-                  this.state.author
+                  this.state.quote
                 }
                 id="tweet-quote"
               >
