@@ -20,7 +20,7 @@ export class NewQuote extends React.Component {
     });
   }
   handleSubmit() {
-    fetch("http://quoter-api-pbyg.onrender.com/quotes/new", {
+    fetch("https://fccquoterbackend-production.up.railway.app/quotes/new", {
       method: "POST",
       body: JSON.stringify({
         quote: this.state.quote,
@@ -31,10 +31,6 @@ export class NewQuote extends React.Component {
       },
     })
       .then((response) => response.json())
-      .then((json) => {
-        // Aca tiene que cambiar a la vista de Quotes, esa parte ya anda, aunque deberia mostrar esta quote
-        console.log(json);
-      });
   }
 
   render() {

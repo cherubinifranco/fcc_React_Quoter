@@ -8,7 +8,7 @@ export class About extends React.Component {
     render() {
         return (
             <div>
-                Hecho por cheru
+                Made by: <a>github.com/cherubinifranco</a>. This will soon look good, promise
             </div>
         )
     }
