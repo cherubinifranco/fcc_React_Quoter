@@ -18,7 +18,7 @@ export class QuoteSorter extends React.Component {
   }
 
   nextQuote() {
-    fetch("http://192.168.100.147:5000/quotes/sorter", {
+    fetch("http://quoter-api-pbyg.onrender.com/quotes/sorter", {
       method: "get",
       headers: {
         "Content-Type": "aplication/json",
