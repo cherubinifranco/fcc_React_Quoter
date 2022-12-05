@@ -31,6 +31,9 @@ export class NewQuote extends React.Component {
       },
     })
       .then((response) => response.json())
+      .then(json => {
+        console.log(json)
+      })
   }
 
   render() {
@@ -71,13 +74,14 @@ export class NewQuote extends React.Component {
             />
             
             
-            <button
+            <Link
+              to="/"
               onClick={this.handleSubmit}
               type="submit"
               className="btn btn-primary"
             >
               Send
-            </button>
+            </Link>
           </div>
         </form>
       </div>
